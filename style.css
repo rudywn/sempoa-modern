@@ -1,0 +1,106 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-weight: normal;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0089ce, #00c552);
+  }
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+  }
+    
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 90px);
+    position: relative;
+    float: left;
+    padding-left: 140px;
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2.3rem;
+    border: 1px solid rgb(29, 28, 28);
+    outline: none;
+    background-color: rgba(250, 166, 243, 0.87);
+    border-radius: 3px;
+  }
+
+  .calculator-grid > button:hover {
+    background-color: rgba(250, 103, 238, 0.95);
+  }
+  
+  .calculator-grid .all-clear {
+    grid-column: span 2;
+  }
+
+  .calculator-grid .all-clear:hover {
+    background-color: rgb(192, 47, 47);
+  }
+
+  .calculator-grid .equals {
+    grid-column: span 2;
+  }
+
+  .calculator-grid .equals:hover {
+    background-color: #00e0bb;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: rgba(87, 4, 83, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  .profile {
+    margin-top: 100px;
+    padding-right: 140px;
+    float: right;
+    text-align: center;
+    font-family: 'Baloo Chettan 2', cursive;
+  }
+
+  .profile h1 {
+    font-family: 'Gugi', cursive;
+    font-size: 55px;
+    line-height: 6px;
+  }
+
+  .profile img {
+    max-width: 180px;
+  }
+  
+  .profile a {
+    max-width: 80px;
+    text-decoration: none;
+    color: #FF0000;
+    font-size: 25px;
+  }

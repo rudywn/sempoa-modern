@@ -14,6 +14,11 @@
     position: absolute;
     width: 100%;
   }
+
+  .calculator {
+    display: flex;
+    justify-content: space-around;
+  }
     
   .calculator-grid {
     display: grid;
@@ -22,9 +27,7 @@
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 90px);
-    position: relative;
-    float: left;
-    padding-left: 140px;
+    z-index: 10;
   }
   
   .calculator-grid > button {
@@ -81,11 +84,10 @@
   }
 
   .profile {
-    margin-top: 100px;
-    padding-right: 140px;
-    float: right;
     text-align: center;
     font-family: 'Baloo Chettan 2', cursive;
+    margin-top: 120px;
+    z-index: 10;
   }
 
   .profile h1 {
@@ -103,4 +105,8 @@
     text-decoration: none;
     color: #FF0000;
     font-size: 25px;
+  }
+
+  .profile a {
+    cursor: pointer;
   }

@@ -110,3 +110,9 @@
   .profile a {
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 768px) {
+    .calculator {
+        flex-direction: column;
+    }
+  }
